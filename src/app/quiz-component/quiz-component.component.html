@@ -1,0 +1,23 @@
+<div class="container-fluid">
+<div class="quiz-details">
+    <h4 class="mb-2"><b>Welcome to Angular Quiz</b></h4>
+     <p class="mb-4">This quiz will contains total 10 questions. Each Question holds 10 points</p>
+     <h6 class="mb-3"><b>Rules:</b></h6>
+     <ol class="mb-2">
+      <li>Correct Answer gives you 10 points.</li>
+      <li>Incorrect answer gives you -5 points.</li>
+      <li>You will have 60 sec to answer each question.</li>
+      <li>Refreshing the page with reset the Quiz.</li>
+     </ol>
+
+     <h4 class="all">All the best!!</h4>
+
+     <form class="form mt-2" #form="ngForm">
+      <label>Enter your Name:</label><br>
+      <input type="text" class="mb-3" [(ngModel)]="userName" name="userName"><br>
+      <button class="btn btn-primary p-1" (click)="onSubmit()">Start the Quiz</button>
+     </form>
+</div>
+
+
+</div>
